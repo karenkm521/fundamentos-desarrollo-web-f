@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree",sans-serif;
+}
+body{
+    background-color: hsl(46.63deg 88.3% 63.14%);
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    margin: 100px auto;
+    width: 380px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 8px 8px 0px black;
+
+}
+
+.card span{
+    display: inline-block;
+    background-color: hsl(46.63deg 88.3% 63.14%);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: small;
+
+}
+.card small{
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+h1{
+    font-size: large;
+    font-weight: 800;
+}
+.card > img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.card >p{
+    color: hsl(0, 0%, 42%);
+    margin-top: 15px;
+    line-height: 23px;
+}
+.usuario{
+    margin-top: 20px;
+}
+
+.usuario img{
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    
+}
+.usuario  p{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 800;
+    font-size: small;
+    
+}
+@font-face{
+    font-family: "Figtree";
+    src: url("fonts/Figtree-VariableFont_wght.ttf") format("ttf");
+    src: url("fonts/Figtree-Italic-VariableFont_wght.ttf") format("ttf");
+    
+}
