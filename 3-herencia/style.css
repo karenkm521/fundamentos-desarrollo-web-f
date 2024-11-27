@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: aqua;
+    text-shadow: 1px 1px 1px black;
+}
+a{
+    text-decoration: none;
+    /* color: inherit; */
+    color: aliceblue;
+    background-color: rgb(22, 71, 65);
+}
+
+.diferente{
+    text-shadow: none;
+    color: rgb(30, 11, 32);
+}
+
+h1 span{
+    background-color: rgb(56, 34, 153);
+    text-shadow: none;
+}
+
+a{
+    color: rgb(6, 35, 61);
+    background-color: rgb(25, 207, 227);
+    text-shadow: none;
+}
+
+/* Ejemplo especificidad */
+#red{
+    color: brown;
+}
+.blue{
+    color:rgb(6, 61, 20)!important;
+}
+h1{
+    color: rgb(255, 47, 47);
+}
