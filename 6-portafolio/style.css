@@ -31,6 +31,7 @@ header{
     display: flex;
     gap: 10px;
 }
+/*Seccion welcome*/
 .welcome-content{
     display: flex;
     padding: 50px 0;
@@ -76,3 +77,96 @@ header{
     left: 0;
     transform: rotate(-130deg);
 }
+/*Seccion productos*/
+#productos{
+    background-color: lightgrey;
+}
+#productos> .container{
+    background-color: silver;
+}
+.productos-conteiner{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+/*.productos-conteiner:nth-child(1){
+    background-color: blue;
+}
+*/
+.productos-card{
+    flex: 1 ;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;/*bordes*/
+    
+}
+.productos-card:hover .card-hover{
+    opacity: 2;
+}
+/*
+.productos-conteiner div:nth-child(1){
+    background-color: blue;
+}
+    
+.productos-conteiner div:nth-child(2){
+    background-color: tomato;
+}
+    
+.productos-conteiner div:nth-child(3){
+    background-color: green;
+}
+*/
+.productos-card img{
+    width: 100%; 
+    height: 100%;
+}
+    
+.card-hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.438) !important;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+.card-hover-header{
+    display: flex;
+    padding: 15px ;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-hover-header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-guardar{
+    background-color: rgb(235, 46, 13);
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.card-hover-footer{
+    padding: 10px ;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.card-hover-footer i {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
