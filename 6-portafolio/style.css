@@ -60,6 +60,7 @@ header{
     position: relative;
     background-color: rgb(79, 78, 80);
     flex: 1;
+    overflow: hidden;
 }
 .img-pizza, .img-hoja,.img-tomato{
     position: absolute;
@@ -169,4 +170,40 @@ header{
     cursor: pointer;
 
 }
+/*Primer Breakpoint*/
+@media screen and (max-width: 800px){
+    body{
+      /*  background-color: rgb(124, 172, 172);*/
+    }
 
+    .welcome-content{
+        flex-direction: column-reverse;
+    }
+    .col-2{
+       /* background-color: rebeccapurple;*/
+        flex: none;
+        height: 300px;
+    }
+    .img-pizza, .img-hoja,.img-tomato{
+        width: 230px;
+    }
+    .productos-card{
+        width: 48%;
+        flex: none;
+
+    }
+    .productos-conteiner{
+        flex-wrap: wrap;
+    }
+}
+/*Segundo Breakpoint mobiles*/
+@media screen and (max-width: 576px){
+    body{
+       /* background-color: blue;*/
+    }
+.productos-card{
+    flex: none;
+    width: 80%;
+    margin: auto;
+}
+}
