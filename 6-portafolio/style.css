@@ -2,25 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+    
 }
 body{
-    background-color: #151515;
+    background-color: #a5daf0;
     color: #fff;
     font-family: sans-serif;
 }
 
 header{
-    background-color: rgb(52, 52, 52); 
+    background: rgb(75,74,83);
+    background: radial-gradient(circle, rgb(56, 102, 161) 19%, rgb(33, 80, 182) 55%, rgb(13, 31, 189) 92%);
     position: sticky;
     top: 0;
     z-index: 2;
     
 }
+header ul{
+    list-style: none;
+}
 .container{
     max-width: 900px;
     margin: auto;
 }
+/*Menu*/
+.container-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+}
+.container-menu h2{
+    font-size: 4vh;
+}
+.skills-content{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 70%;
+    padding: 30px;
+}
+.skills-content > div{
+    display: grid;
+    background-color: #ca9e9e36;
+    row-gap: 5px;
+    padding: 5%;
+    border-radius: 30px;
+}
+.skills-content h1{
+    text-align: center;
+}
+.skills-content ul{
+    margin-left: 7%;
+}
+.especialidades{
+    grid-row: 1/3;
+}
+
 .header-content{
     display: flex;
     justify-content: space-between;
@@ -45,46 +84,47 @@ header{
 .col-1 h3{font-size: 3rem;}
 .col-1 h3 span{
     text-decoration: underline;
-    text-decoration-color: aquamarine;
+    text-decoration-color: rgb(247, 250, 249);
 }
 .col-1 a{
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-decoration-color: aquamarine;
+    text-decoration-color: rgb(246, 247, 246);
 }
 .col-2{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: rgb(79, 78, 80);
+    background-color: rgba(40, 90, 197, 0.575);
     flex: 1;
+    border-radius: 15px;
+    height: 30vh;
     overflow: hidden;
 }
 .img-pizza, .img-hoja,.img-tomato{
     position: absolute;
 }
-.img-pizza{
-    filter: blur(2px);
-}
+
 .img-tomato{
-    width: 80%;
-    right: -30px;
-    top: 0;
+    width: 30%;
+    right: 20px;
+    
 }
 .img-hoja{
-    width: 40%;
+    width: 50%;
     left: 0;
-    transform: rotate(-130deg);
+    transform: rotate(-10deg);
 }
 /*Seccion productos*/
 #productos{
-    background-color: lightgrey;
+    background-color: rgb(39, 97, 151);
 }
 #productos> .container{
+    /*
     background-color: silver;
-}
+*/}
 .productos-conteiner{
     display: flex;
     gap: 10px;
@@ -170,6 +210,7 @@ header{
     cursor: pointer;
 
 }
+
 /*Primer Breakpoint*/
 @media screen and (max-width: 800px){
     body{
@@ -205,5 +246,22 @@ header{
     flex: none;
     width: 80%;
     margin: auto;
+}
+.skills-content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+
+}
+.skills-content > div{
+    border-radius: 10px;
+}
+
+.skills-content h1{
+    font-size: medium;
+}
+.skills-content ul{
+    font-size: small;
+    margin-left: 15%;
 }
 }
